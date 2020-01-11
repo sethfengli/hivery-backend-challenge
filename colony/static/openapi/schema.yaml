@@ -1,0 +1,3227 @@
+openapi: 3.0.2
+info:
+  title: ''
+  version: ''
+paths:
+  /company/:
+    get:
+      operationId: listCompanys
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  properties:
+                    index:
+                      type: integer
+                    name:
+                      type: string
+                      maxLength: 100
+                  required:
+                  - index
+                  - name
+          description: ''
+    post:
+      operationId: CreateCompany
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema: &id001
+              properties:
+                index:
+                  type: integer
+                name:
+                  type: string
+                  maxLength: 100
+              required:
+              - index
+              - name
+          application/x-www-form-urlencoded:
+            schema: *id001
+          multipart/form-data:
+            schema: *id001
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  index:
+                    type: integer
+                  name:
+                    type: string
+                    maxLength: 100
+                required:
+                - index
+                - name
+          description: ''
+  /company{format}:
+    get:
+      operationId: RetrieveCompany
+      description: ''
+      parameters:
+      - name: format
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  index:
+                    type: integer
+                  name:
+                    type: string
+                    maxLength: 100
+                required:
+                - index
+                - name
+          description: ''
+    post:
+      operationId: CreateCompany
+      description: ''
+      parameters:
+      - name: format
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: &id002
+              properties:
+                index:
+                  type: integer
+                name:
+                  type: string
+                  maxLength: 100
+              required:
+              - index
+              - name
+          application/x-www-form-urlencoded:
+            schema: *id002
+          multipart/form-data:
+            schema: *id002
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  index:
+                    type: integer
+                  name:
+                    type: string
+                    maxLength: 100
+                required:
+                - index
+                - name
+          description: ''
+  /company/{index}/:
+    get:
+      operationId: RetrieveCompany
+      description: ''
+      parameters:
+      - name: index
+        in: path
+        required: true
+        description: A unique value identifying this company.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  index:
+                    type: integer
+                  name:
+                    type: string
+                    maxLength: 100
+                required:
+                - index
+                - name
+          description: ''
+    put:
+      operationId: UpdateCompany
+      description: ''
+      parameters:
+      - name: index
+        in: path
+        required: true
+        description: A unique value identifying this company.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: &id003
+              properties:
+                index:
+                  type: integer
+                name:
+                  type: string
+                  maxLength: 100
+              required:
+              - index
+              - name
+          application/x-www-form-urlencoded:
+            schema: *id003
+          multipart/form-data:
+            schema: *id003
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  index:
+                    type: integer
+                  name:
+                    type: string
+                    maxLength: 100
+                required:
+                - index
+                - name
+          description: ''
+    patch:
+      operationId: PartialUpdateCompany
+      description: ''
+      parameters:
+      - name: index
+        in: path
+        required: true
+        description: A unique value identifying this company.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: &id004
+              properties:
+                index:
+                  type: integer
+                name:
+                  type: string
+                  maxLength: 100
+          application/x-www-form-urlencoded:
+            schema: *id004
+          multipart/form-data:
+            schema: *id004
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  index:
+                    type: integer
+                  name:
+                    type: string
+                    maxLength: 100
+                required:
+                - index
+                - name
+          description: ''
+    delete:
+      operationId: DestroyCompany
+      description: ''
+      parameters:
+      - name: index
+        in: path
+        required: true
+        description: A unique value identifying this company.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+  /company/{index}{format}:
+    get:
+      operationId: RetrieveCompany
+      description: ''
+      parameters:
+      - name: index
+        in: path
+        required: true
+        description: A unique value identifying this company.
+        schema:
+          type: string
+      - name: format
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  index:
+                    type: integer
+                  name:
+                    type: string
+                    maxLength: 100
+                required:
+                - index
+                - name
+          description: ''
+    put:
+      operationId: UpdateCompany
+      description: ''
+      parameters:
+      - name: index
+        in: path
+        required: true
+        description: A unique value identifying this company.
+        schema:
+          type: string
+      - name: format
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: &id005
+              properties:
+                index:
+                  type: integer
+                name:
+                  type: string
+                  maxLength: 100
+              required:
+              - index
+              - name
+          application/x-www-form-urlencoded:
+            schema: *id005
+          multipart/form-data:
+            schema: *id005
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  index:
+                    type: integer
+                  name:
+                    type: string
+                    maxLength: 100
+                required:
+                - index
+                - name
+          description: ''
+    patch:
+      operationId: PartialUpdateCompany
+      description: ''
+      parameters:
+      - name: index
+        in: path
+        required: true
+        description: A unique value identifying this company.
+        schema:
+          type: string
+      - name: format
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: &id006
+              properties:
+                index:
+                  type: integer
+                name:
+                  type: string
+                  maxLength: 100
+          application/x-www-form-urlencoded:
+            schema: *id006
+          multipart/form-data:
+            schema: *id006
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  index:
+                    type: integer
+                  name:
+                    type: string
+                    maxLength: 100
+                required:
+                - index
+                - name
+          description: ''
+    delete:
+      operationId: DestroyCompany
+      description: ''
+      parameters:
+      - name: index
+        in: path
+        required: true
+        description: A unique value identifying this company.
+        schema:
+          type: string
+      - name: format
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+  /fruit/:
+    get:
+      operationId: listFruits
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  properties:
+                    index:
+                      type: integer
+                    name:
+                      type: string
+                      maxLength: 100
+                  required:
+                  - index
+                  - name
+          description: ''
+    post:
+      operationId: CreateFruit
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema: &id007
+              properties:
+                index:
+                  type: integer
+                name:
+                  type: string
+                  maxLength: 100
+              required:
+              - index
+              - name
+          application/x-www-form-urlencoded:
+            schema: *id007
+          multipart/form-data:
+            schema: *id007
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  index:
+                    type: integer
+                  name:
+                    type: string
+                    maxLength: 100
+                required:
+                - index
+                - name
+          description: ''
+  /fruit{format}:
+    get:
+      operationId: RetrieveFruit
+      description: ''
+      parameters:
+      - name: format
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  index:
+                    type: integer
+                  name:
+                    type: string
+                    maxLength: 100
+                required:
+                - index
+                - name
+          description: ''
+    post:
+      operationId: CreateFruit
+      description: ''
+      parameters:
+      - name: format
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: &id008
+              properties:
+                index:
+                  type: integer
+                name:
+                  type: string
+                  maxLength: 100
+              required:
+              - index
+              - name
+          application/x-www-form-urlencoded:
+            schema: *id008
+          multipart/form-data:
+            schema: *id008
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  index:
+                    type: integer
+                  name:
+                    type: string
+                    maxLength: 100
+                required:
+                - index
+                - name
+          description: ''
+  /fruit/{index}/:
+    get:
+      operationId: RetrieveFruit
+      description: ''
+      parameters:
+      - name: index
+        in: path
+        required: true
+        description: A unique value identifying this fruit.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  index:
+                    type: integer
+                  name:
+                    type: string
+                    maxLength: 100
+                required:
+                - index
+                - name
+          description: ''
+    put:
+      operationId: UpdateFruit
+      description: ''
+      parameters:
+      - name: index
+        in: path
+        required: true
+        description: A unique value identifying this fruit.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: &id009
+              properties:
+                index:
+                  type: integer
+                name:
+                  type: string
+                  maxLength: 100
+              required:
+              - index
+              - name
+          application/x-www-form-urlencoded:
+            schema: *id009
+          multipart/form-data:
+            schema: *id009
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  index:
+                    type: integer
+                  name:
+                    type: string
+                    maxLength: 100
+                required:
+                - index
+                - name
+          description: ''
+    patch:
+      operationId: PartialUpdateFruit
+      description: ''
+      parameters:
+      - name: index
+        in: path
+        required: true
+        description: A unique value identifying this fruit.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: &id010
+              properties:
+                index:
+                  type: integer
+                name:
+                  type: string
+                  maxLength: 100
+          application/x-www-form-urlencoded:
+            schema: *id010
+          multipart/form-data:
+            schema: *id010
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  index:
+                    type: integer
+                  name:
+                    type: string
+                    maxLength: 100
+                required:
+                - index
+                - name
+          description: ''
+    delete:
+      operationId: DestroyFruit
+      description: ''
+      parameters:
+      - name: index
+        in: path
+        required: true
+        description: A unique value identifying this fruit.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+  /fruit/{index}{format}:
+    get:
+      operationId: RetrieveFruit
+      description: ''
+      parameters:
+      - name: index
+        in: path
+        required: true
+        description: A unique value identifying this fruit.
+        schema:
+          type: string
+      - name: format
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  index:
+                    type: integer
+                  name:
+                    type: string
+                    maxLength: 100
+                required:
+                - index
+                - name
+          description: ''
+    put:
+      operationId: UpdateFruit
+      description: ''
+      parameters:
+      - name: index
+        in: path
+        required: true
+        description: A unique value identifying this fruit.
+        schema:
+          type: string
+      - name: format
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: &id011
+              properties:
+                index:
+                  type: integer
+                name:
+                  type: string
+                  maxLength: 100
+              required:
+              - index
+              - name
+          application/x-www-form-urlencoded:
+            schema: *id011
+          multipart/form-data:
+            schema: *id011
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  index:
+                    type: integer
+                  name:
+                    type: string
+                    maxLength: 100
+                required:
+                - index
+                - name
+          description: ''
+    patch:
+      operationId: PartialUpdateFruit
+      description: ''
+      parameters:
+      - name: index
+        in: path
+        required: true
+        description: A unique value identifying this fruit.
+        schema:
+          type: string
+      - name: format
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: &id012
+              properties:
+                index:
+                  type: integer
+                name:
+                  type: string
+                  maxLength: 100
+          application/x-www-form-urlencoded:
+            schema: *id012
+          multipart/form-data:
+            schema: *id012
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  index:
+                    type: integer
+                  name:
+                    type: string
+                    maxLength: 100
+                required:
+                - index
+                - name
+          description: ''
+    delete:
+      operationId: DestroyFruit
+      description: ''
+      parameters:
+      - name: index
+        in: path
+        required: true
+        description: A unique value identifying this fruit.
+        schema:
+          type: string
+      - name: format
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+  /vegetable/:
+    get:
+      operationId: listVegetables
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  properties:
+                    index:
+                      type: integer
+                    name:
+                      type: string
+                      maxLength: 100
+                  required:
+                  - index
+                  - name
+          description: ''
+    post:
+      operationId: CreateVegetable
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema: &id013
+              properties:
+                index:
+                  type: integer
+                name:
+                  type: string
+                  maxLength: 100
+              required:
+              - index
+              - name
+          application/x-www-form-urlencoded:
+            schema: *id013
+          multipart/form-data:
+            schema: *id013
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  index:
+                    type: integer
+                  name:
+                    type: string
+                    maxLength: 100
+                required:
+                - index
+                - name
+          description: ''
+  /vegetable{format}:
+    get:
+      operationId: RetrieveVegetable
+      description: ''
+      parameters:
+      - name: format
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  index:
+                    type: integer
+                  name:
+                    type: string
+                    maxLength: 100
+                required:
+                - index
+                - name
+          description: ''
+    post:
+      operationId: CreateVegetable
+      description: ''
+      parameters:
+      - name: format
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: &id014
+              properties:
+                index:
+                  type: integer
+                name:
+                  type: string
+                  maxLength: 100
+              required:
+              - index
+              - name
+          application/x-www-form-urlencoded:
+            schema: *id014
+          multipart/form-data:
+            schema: *id014
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  index:
+                    type: integer
+                  name:
+                    type: string
+                    maxLength: 100
+                required:
+                - index
+                - name
+          description: ''
+  /vegetable/{index}/:
+    get:
+      operationId: RetrieveVegetable
+      description: ''
+      parameters:
+      - name: index
+        in: path
+        required: true
+        description: A unique value identifying this vegetable.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  index:
+                    type: integer
+                  name:
+                    type: string
+                    maxLength: 100
+                required:
+                - index
+                - name
+          description: ''
+    put:
+      operationId: UpdateVegetable
+      description: ''
+      parameters:
+      - name: index
+        in: path
+        required: true
+        description: A unique value identifying this vegetable.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: &id015
+              properties:
+                index:
+                  type: integer
+                name:
+                  type: string
+                  maxLength: 100
+              required:
+              - index
+              - name
+          application/x-www-form-urlencoded:
+            schema: *id015
+          multipart/form-data:
+            schema: *id015
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  index:
+                    type: integer
+                  name:
+                    type: string
+                    maxLength: 100
+                required:
+                - index
+                - name
+          description: ''
+    patch:
+      operationId: PartialUpdateVegetable
+      description: ''
+      parameters:
+      - name: index
+        in: path
+        required: true
+        description: A unique value identifying this vegetable.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: &id016
+              properties:
+                index:
+                  type: integer
+                name:
+                  type: string
+                  maxLength: 100
+          application/x-www-form-urlencoded:
+            schema: *id016
+          multipart/form-data:
+            schema: *id016
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  index:
+                    type: integer
+                  name:
+                    type: string
+                    maxLength: 100
+                required:
+                - index
+                - name
+          description: ''
+    delete:
+      operationId: DestroyVegetable
+      description: ''
+      parameters:
+      - name: index
+        in: path
+        required: true
+        description: A unique value identifying this vegetable.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+  /vegetable/{index}{format}:
+    get:
+      operationId: RetrieveVegetable
+      description: ''
+      parameters:
+      - name: index
+        in: path
+        required: true
+        description: A unique value identifying this vegetable.
+        schema:
+          type: string
+      - name: format
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  index:
+                    type: integer
+                  name:
+                    type: string
+                    maxLength: 100
+                required:
+                - index
+                - name
+          description: ''
+    put:
+      operationId: UpdateVegetable
+      description: ''
+      parameters:
+      - name: index
+        in: path
+        required: true
+        description: A unique value identifying this vegetable.
+        schema:
+          type: string
+      - name: format
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: &id017
+              properties:
+                index:
+                  type: integer
+                name:
+                  type: string
+                  maxLength: 100
+              required:
+              - index
+              - name
+          application/x-www-form-urlencoded:
+            schema: *id017
+          multipart/form-data:
+            schema: *id017
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  index:
+                    type: integer
+                  name:
+                    type: string
+                    maxLength: 100
+                required:
+                - index
+                - name
+          description: ''
+    patch:
+      operationId: PartialUpdateVegetable
+      description: ''
+      parameters:
+      - name: index
+        in: path
+        required: true
+        description: A unique value identifying this vegetable.
+        schema:
+          type: string
+      - name: format
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: &id018
+              properties:
+                index:
+                  type: integer
+                name:
+                  type: string
+                  maxLength: 100
+          application/x-www-form-urlencoded:
+            schema: *id018
+          multipart/form-data:
+            schema: *id018
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  index:
+                    type: integer
+                  name:
+                    type: string
+                    maxLength: 100
+                required:
+                - index
+                - name
+          description: ''
+    delete:
+      operationId: DestroyVegetable
+      description: ''
+      parameters:
+      - name: index
+        in: path
+        required: true
+        description: A unique value identifying this vegetable.
+        schema:
+          type: string
+      - name: format
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+  /tag/:
+    get:
+      operationId: listTags
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  properties:
+                    index:
+                      type: integer
+                    name:
+                      type: string
+                      maxLength: 100
+                  required:
+                  - index
+                  - name
+          description: ''
+    post:
+      operationId: CreateTag
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema: &id019
+              properties:
+                index:
+                  type: integer
+                name:
+                  type: string
+                  maxLength: 100
+              required:
+              - index
+              - name
+          application/x-www-form-urlencoded:
+            schema: *id019
+          multipart/form-data:
+            schema: *id019
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  index:
+                    type: integer
+                  name:
+                    type: string
+                    maxLength: 100
+                required:
+                - index
+                - name
+          description: ''
+  /tag{format}:
+    get:
+      operationId: RetrieveTag
+      description: ''
+      parameters:
+      - name: format
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  index:
+                    type: integer
+                  name:
+                    type: string
+                    maxLength: 100
+                required:
+                - index
+                - name
+          description: ''
+    post:
+      operationId: CreateTag
+      description: ''
+      parameters:
+      - name: format
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: &id020
+              properties:
+                index:
+                  type: integer
+                name:
+                  type: string
+                  maxLength: 100
+              required:
+              - index
+              - name
+          application/x-www-form-urlencoded:
+            schema: *id020
+          multipart/form-data:
+            schema: *id020
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  index:
+                    type: integer
+                  name:
+                    type: string
+                    maxLength: 100
+                required:
+                - index
+                - name
+          description: ''
+  /tag/{index}/:
+    get:
+      operationId: RetrieveTag
+      description: ''
+      parameters:
+      - name: index
+        in: path
+        required: true
+        description: A unique value identifying this tag.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  index:
+                    type: integer
+                  name:
+                    type: string
+                    maxLength: 100
+                required:
+                - index
+                - name
+          description: ''
+    put:
+      operationId: UpdateTag
+      description: ''
+      parameters:
+      - name: index
+        in: path
+        required: true
+        description: A unique value identifying this tag.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: &id021
+              properties:
+                index:
+                  type: integer
+                name:
+                  type: string
+                  maxLength: 100
+              required:
+              - index
+              - name
+          application/x-www-form-urlencoded:
+            schema: *id021
+          multipart/form-data:
+            schema: *id021
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  index:
+                    type: integer
+                  name:
+                    type: string
+                    maxLength: 100
+                required:
+                - index
+                - name
+          description: ''
+    patch:
+      operationId: PartialUpdateTag
+      description: ''
+      parameters:
+      - name: index
+        in: path
+        required: true
+        description: A unique value identifying this tag.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: &id022
+              properties:
+                index:
+                  type: integer
+                name:
+                  type: string
+                  maxLength: 100
+          application/x-www-form-urlencoded:
+            schema: *id022
+          multipart/form-data:
+            schema: *id022
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  index:
+                    type: integer
+                  name:
+                    type: string
+                    maxLength: 100
+                required:
+                - index
+                - name
+          description: ''
+    delete:
+      operationId: DestroyTag
+      description: ''
+      parameters:
+      - name: index
+        in: path
+        required: true
+        description: A unique value identifying this tag.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+  /tag/{index}{format}:
+    get:
+      operationId: RetrieveTag
+      description: ''
+      parameters:
+      - name: index
+        in: path
+        required: true
+        description: A unique value identifying this tag.
+        schema:
+          type: string
+      - name: format
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  index:
+                    type: integer
+                  name:
+                    type: string
+                    maxLength: 100
+                required:
+                - index
+                - name
+          description: ''
+    put:
+      operationId: UpdateTag
+      description: ''
+      parameters:
+      - name: index
+        in: path
+        required: true
+        description: A unique value identifying this tag.
+        schema:
+          type: string
+      - name: format
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: &id023
+              properties:
+                index:
+                  type: integer
+                name:
+                  type: string
+                  maxLength: 100
+              required:
+              - index
+              - name
+          application/x-www-form-urlencoded:
+            schema: *id023
+          multipart/form-data:
+            schema: *id023
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  index:
+                    type: integer
+                  name:
+                    type: string
+                    maxLength: 100
+                required:
+                - index
+                - name
+          description: ''
+    patch:
+      operationId: PartialUpdateTag
+      description: ''
+      parameters:
+      - name: index
+        in: path
+        required: true
+        description: A unique value identifying this tag.
+        schema:
+          type: string
+      - name: format
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: &id024
+              properties:
+                index:
+                  type: integer
+                name:
+                  type: string
+                  maxLength: 100
+          application/x-www-form-urlencoded:
+            schema: *id024
+          multipart/form-data:
+            schema: *id024
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  index:
+                    type: integer
+                  name:
+                    type: string
+                    maxLength: 100
+                required:
+                - index
+                - name
+          description: ''
+    delete:
+      operationId: DestroyTag
+      description: ''
+      parameters:
+      - name: index
+        in: path
+        required: true
+        description: A unique value identifying this tag.
+        schema:
+          type: string
+      - name: format
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+  /people/:
+    get:
+      operationId: listPeoples
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items:
+                  properties:
+                    _id:
+                      type: string
+                      maxLength: 32
+                    index:
+                      type: integer
+                    guid:
+                      type: string
+                      maxLength: 36
+                    has_died:
+                      type: boolean
+                    balance:
+                      type: number
+                      multipleOf: 0.01
+                      maximum: 10000000000
+                      minimum: -10000000000
+                    picture:
+                      type: string
+                      maxLength: 255
+                    age:
+                      type: integer
+                    eyeColor:
+                      type: string
+                      maxLength: 100
+                    name:
+                      type: string
+                      maxLength: 255
+                    gender:
+                      type: string
+                      maxLength: 100
+                    email:
+                      type: string
+                      maxLength: 255
+                    phone:
+                      type: string
+                      maxLength: 255
+                    address:
+                      type: string
+                      maxLength: 255
+                    about:
+                      type: string
+                      maxLength: 1024
+                    registered:
+                      type: string
+                      format: date-time
+                    tags:
+                      type: array
+                      items:
+                        type: string
+                    friends:
+                      type: array
+                      items:
+                        type: string
+                    greeting:
+                      type: string
+                      maxLength: 256
+                    favouriteFood:
+                      type: string
+                      maxLength: 4
+                    favouriteFruit:
+                      type: array
+                      items:
+                        type: string
+                    favouriteVegetable:
+                      type: array
+                      items:
+                        type: string
+                    company:
+                      type: string
+                      nullable: true
+                  required:
+                  - index
+                  - guid
+                  - age
+                  - name
+          description: ''
+    post:
+      operationId: CreatePeople
+      description: ''
+      parameters: []
+      requestBody:
+        content:
+          application/json:
+            schema: &id025
+              properties:
+                _id:
+                  type: string
+                  maxLength: 32
+                index:
+                  type: integer
+                guid:
+                  type: string
+                  maxLength: 36
+                has_died:
+                  type: boolean
+                balance:
+                  type: number
+                  multipleOf: 0.01
+                  maximum: 10000000000
+                  minimum: -10000000000
+                picture:
+                  type: string
+                  maxLength: 255
+                age:
+                  type: integer
+                eyeColor:
+                  type: string
+                  maxLength: 100
+                name:
+                  type: string
+                  maxLength: 255
+                gender:
+                  type: string
+                  maxLength: 100
+                email:
+                  type: string
+                  maxLength: 255
+                phone:
+                  type: string
+                  maxLength: 255
+                address:
+                  type: string
+                  maxLength: 255
+                about:
+                  type: string
+                  maxLength: 1024
+                registered:
+                  type: string
+                  format: date-time
+                tags:
+                  type: array
+                  items:
+                    type: string
+                friends:
+                  type: array
+                  items:
+                    type: string
+                greeting:
+                  type: string
+                  maxLength: 256
+                favouriteFood:
+                  type: string
+                  maxLength: 4
+                favouriteFruit:
+                  type: array
+                  items:
+                    type: string
+                favouriteVegetable:
+                  type: array
+                  items:
+                    type: string
+                company:
+                  type: string
+                  nullable: true
+              required:
+              - index
+              - guid
+              - age
+              - name
+          application/x-www-form-urlencoded:
+            schema: *id025
+          multipart/form-data:
+            schema: *id025
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  _id:
+                    type: string
+                    maxLength: 32
+                  index:
+                    type: integer
+                  guid:
+                    type: string
+                    maxLength: 36
+                  has_died:
+                    type: boolean
+                  balance:
+                    type: number
+                    multipleOf: 0.01
+                    maximum: 10000000000
+                    minimum: -10000000000
+                  picture:
+                    type: string
+                    maxLength: 255
+                  age:
+                    type: integer
+                  eyeColor:
+                    type: string
+                    maxLength: 100
+                  name:
+                    type: string
+                    maxLength: 255
+                  gender:
+                    type: string
+                    maxLength: 100
+                  email:
+                    type: string
+                    maxLength: 255
+                  phone:
+                    type: string
+                    maxLength: 255
+                  address:
+                    type: string
+                    maxLength: 255
+                  about:
+                    type: string
+                    maxLength: 1024
+                  registered:
+                    type: string
+                    format: date-time
+                  tags:
+                    type: array
+                    items:
+                      type: string
+                  friends:
+                    type: array
+                    items:
+                      type: string
+                  greeting:
+                    type: string
+                    maxLength: 256
+                  favouriteFood:
+                    type: string
+                    maxLength: 4
+                  favouriteFruit:
+                    type: array
+                    items:
+                      type: string
+                  favouriteVegetable:
+                    type: array
+                    items:
+                      type: string
+                  company:
+                    type: string
+                    nullable: true
+                required:
+                - index
+                - guid
+                - age
+                - name
+          description: ''
+  /people{format}:
+    get:
+      operationId: RetrievePeople
+      description: ''
+      parameters:
+      - name: format
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  _id:
+                    type: string
+                    maxLength: 32
+                  index:
+                    type: integer
+                  guid:
+                    type: string
+                    maxLength: 36
+                  has_died:
+                    type: boolean
+                  balance:
+                    type: number
+                    multipleOf: 0.01
+                    maximum: 10000000000
+                    minimum: -10000000000
+                  picture:
+                    type: string
+                    maxLength: 255
+                  age:
+                    type: integer
+                  eyeColor:
+                    type: string
+                    maxLength: 100
+                  name:
+                    type: string
+                    maxLength: 255
+                  gender:
+                    type: string
+                    maxLength: 100
+                  email:
+                    type: string
+                    maxLength: 255
+                  phone:
+                    type: string
+                    maxLength: 255
+                  address:
+                    type: string
+                    maxLength: 255
+                  about:
+                    type: string
+                    maxLength: 1024
+                  registered:
+                    type: string
+                    format: date-time
+                  tags:
+                    type: array
+                    items:
+                      type: string
+                  friends:
+                    type: array
+                    items:
+                      type: string
+                  greeting:
+                    type: string
+                    maxLength: 256
+                  favouriteFood:
+                    type: string
+                    maxLength: 4
+                  favouriteFruit:
+                    type: array
+                    items:
+                      type: string
+                  favouriteVegetable:
+                    type: array
+                    items:
+                      type: string
+                  company:
+                    type: string
+                    nullable: true
+                required:
+                - index
+                - guid
+                - age
+                - name
+          description: ''
+    post:
+      operationId: CreatePeople
+      description: ''
+      parameters:
+      - name: format
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: &id026
+              properties:
+                _id:
+                  type: string
+                  maxLength: 32
+                index:
+                  type: integer
+                guid:
+                  type: string
+                  maxLength: 36
+                has_died:
+                  type: boolean
+                balance:
+                  type: number
+                  multipleOf: 0.01
+                  maximum: 10000000000
+                  minimum: -10000000000
+                picture:
+                  type: string
+                  maxLength: 255
+                age:
+                  type: integer
+                eyeColor:
+                  type: string
+                  maxLength: 100
+                name:
+                  type: string
+                  maxLength: 255
+                gender:
+                  type: string
+                  maxLength: 100
+                email:
+                  type: string
+                  maxLength: 255
+                phone:
+                  type: string
+                  maxLength: 255
+                address:
+                  type: string
+                  maxLength: 255
+                about:
+                  type: string
+                  maxLength: 1024
+                registered:
+                  type: string
+                  format: date-time
+                tags:
+                  type: array
+                  items:
+                    type: string
+                friends:
+                  type: array
+                  items:
+                    type: string
+                greeting:
+                  type: string
+                  maxLength: 256
+                favouriteFood:
+                  type: string
+                  maxLength: 4
+                favouriteFruit:
+                  type: array
+                  items:
+                    type: string
+                favouriteVegetable:
+                  type: array
+                  items:
+                    type: string
+                company:
+                  type: string
+                  nullable: true
+              required:
+              - index
+              - guid
+              - age
+              - name
+          application/x-www-form-urlencoded:
+            schema: *id026
+          multipart/form-data:
+            schema: *id026
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  _id:
+                    type: string
+                    maxLength: 32
+                  index:
+                    type: integer
+                  guid:
+                    type: string
+                    maxLength: 36
+                  has_died:
+                    type: boolean
+                  balance:
+                    type: number
+                    multipleOf: 0.01
+                    maximum: 10000000000
+                    minimum: -10000000000
+                  picture:
+                    type: string
+                    maxLength: 255
+                  age:
+                    type: integer
+                  eyeColor:
+                    type: string
+                    maxLength: 100
+                  name:
+                    type: string
+                    maxLength: 255
+                  gender:
+                    type: string
+                    maxLength: 100
+                  email:
+                    type: string
+                    maxLength: 255
+                  phone:
+                    type: string
+                    maxLength: 255
+                  address:
+                    type: string
+                    maxLength: 255
+                  about:
+                    type: string
+                    maxLength: 1024
+                  registered:
+                    type: string
+                    format: date-time
+                  tags:
+                    type: array
+                    items:
+                      type: string
+                  friends:
+                    type: array
+                    items:
+                      type: string
+                  greeting:
+                    type: string
+                    maxLength: 256
+                  favouriteFood:
+                    type: string
+                    maxLength: 4
+                  favouriteFruit:
+                    type: array
+                    items:
+                      type: string
+                  favouriteVegetable:
+                    type: array
+                    items:
+                      type: string
+                  company:
+                    type: string
+                    nullable: true
+                required:
+                - index
+                - guid
+                - age
+                - name
+          description: ''
+  /people/{index}/:
+    get:
+      operationId: RetrievePeople
+      description: ''
+      parameters:
+      - name: index
+        in: path
+        required: true
+        description: A unique value identifying this people.
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  _id:
+                    type: string
+                    maxLength: 32
+                  index:
+                    type: integer
+                  guid:
+                    type: string
+                    maxLength: 36
+                  has_died:
+                    type: boolean
+                  balance:
+                    type: number
+                    multipleOf: 0.01
+                    maximum: 10000000000
+                    minimum: -10000000000
+                  picture:
+                    type: string
+                    maxLength: 255
+                  age:
+                    type: integer
+                  eyeColor:
+                    type: string
+                    maxLength: 100
+                  name:
+                    type: string
+                    maxLength: 255
+                  gender:
+                    type: string
+                    maxLength: 100
+                  email:
+                    type: string
+                    maxLength: 255
+                  phone:
+                    type: string
+                    maxLength: 255
+                  address:
+                    type: string
+                    maxLength: 255
+                  about:
+                    type: string
+                    maxLength: 1024
+                  registered:
+                    type: string
+                    format: date-time
+                  tags:
+                    type: array
+                    items:
+                      type: string
+                  friends:
+                    type: array
+                    items:
+                      type: string
+                  greeting:
+                    type: string
+                    maxLength: 256
+                  favouriteFood:
+                    type: string
+                    maxLength: 4
+                  favouriteFruit:
+                    type: array
+                    items:
+                      type: string
+                  favouriteVegetable:
+                    type: array
+                    items:
+                      type: string
+                  company:
+                    type: string
+                    nullable: true
+                required:
+                - index
+                - guid
+                - age
+                - name
+          description: ''
+    put:
+      operationId: UpdatePeople
+      description: ''
+      parameters:
+      - name: index
+        in: path
+        required: true
+        description: A unique value identifying this people.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: &id027
+              properties:
+                _id:
+                  type: string
+                  maxLength: 32
+                index:
+                  type: integer
+                guid:
+                  type: string
+                  maxLength: 36
+                has_died:
+                  type: boolean
+                balance:
+                  type: number
+                  multipleOf: 0.01
+                  maximum: 10000000000
+                  minimum: -10000000000
+                picture:
+                  type: string
+                  maxLength: 255
+                age:
+                  type: integer
+                eyeColor:
+                  type: string
+                  maxLength: 100
+                name:
+                  type: string
+                  maxLength: 255
+                gender:
+                  type: string
+                  maxLength: 100
+                email:
+                  type: string
+                  maxLength: 255
+                phone:
+                  type: string
+                  maxLength: 255
+                address:
+                  type: string
+                  maxLength: 255
+                about:
+                  type: string
+                  maxLength: 1024
+                registered:
+                  type: string
+                  format: date-time
+                tags:
+                  type: array
+                  items:
+                    type: string
+                friends:
+                  type: array
+                  items:
+                    type: string
+                greeting:
+                  type: string
+                  maxLength: 256
+                favouriteFood:
+                  type: string
+                  maxLength: 4
+                favouriteFruit:
+                  type: array
+                  items:
+                    type: string
+                favouriteVegetable:
+                  type: array
+                  items:
+                    type: string
+                company:
+                  type: string
+                  nullable: true
+              required:
+              - index
+              - guid
+              - age
+              - name
+          application/x-www-form-urlencoded:
+            schema: *id027
+          multipart/form-data:
+            schema: *id027
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  _id:
+                    type: string
+                    maxLength: 32
+                  index:
+                    type: integer
+                  guid:
+                    type: string
+                    maxLength: 36
+                  has_died:
+                    type: boolean
+                  balance:
+                    type: number
+                    multipleOf: 0.01
+                    maximum: 10000000000
+                    minimum: -10000000000
+                  picture:
+                    type: string
+                    maxLength: 255
+                  age:
+                    type: integer
+                  eyeColor:
+                    type: string
+                    maxLength: 100
+                  name:
+                    type: string
+                    maxLength: 255
+                  gender:
+                    type: string
+                    maxLength: 100
+                  email:
+                    type: string
+                    maxLength: 255
+                  phone:
+                    type: string
+                    maxLength: 255
+                  address:
+                    type: string
+                    maxLength: 255
+                  about:
+                    type: string
+                    maxLength: 1024
+                  registered:
+                    type: string
+                    format: date-time
+                  tags:
+                    type: array
+                    items:
+                      type: string
+                  friends:
+                    type: array
+                    items:
+                      type: string
+                  greeting:
+                    type: string
+                    maxLength: 256
+                  favouriteFood:
+                    type: string
+                    maxLength: 4
+                  favouriteFruit:
+                    type: array
+                    items:
+                      type: string
+                  favouriteVegetable:
+                    type: array
+                    items:
+                      type: string
+                  company:
+                    type: string
+                    nullable: true
+                required:
+                - index
+                - guid
+                - age
+                - name
+          description: ''
+    patch:
+      operationId: PartialUpdatePeople
+      description: ''
+      parameters:
+      - name: index
+        in: path
+        required: true
+        description: A unique value identifying this people.
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: &id028
+              properties:
+                _id:
+                  type: string
+                  maxLength: 32
+                index:
+                  type: integer
+                guid:
+                  type: string
+                  maxLength: 36
+                has_died:
+                  type: boolean
+                balance:
+                  type: number
+                  multipleOf: 0.01
+                  maximum: 10000000000
+                  minimum: -10000000000
+                picture:
+                  type: string
+                  maxLength: 255
+                age:
+                  type: integer
+                eyeColor:
+                  type: string
+                  maxLength: 100
+                name:
+                  type: string
+                  maxLength: 255
+                gender:
+                  type: string
+                  maxLength: 100
+                email:
+                  type: string
+                  maxLength: 255
+                phone:
+                  type: string
+                  maxLength: 255
+                address:
+                  type: string
+                  maxLength: 255
+                about:
+                  type: string
+                  maxLength: 1024
+                registered:
+                  type: string
+                  format: date-time
+                tags:
+                  type: array
+                  items:
+                    type: string
+                friends:
+                  type: array
+                  items:
+                    type: string
+                greeting:
+                  type: string
+                  maxLength: 256
+                favouriteFood:
+                  type: string
+                  maxLength: 4
+                favouriteFruit:
+                  type: array
+                  items:
+                    type: string
+                favouriteVegetable:
+                  type: array
+                  items:
+                    type: string
+                company:
+                  type: string
+                  nullable: true
+          application/x-www-form-urlencoded:
+            schema: *id028
+          multipart/form-data:
+            schema: *id028
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  _id:
+                    type: string
+                    maxLength: 32
+                  index:
+                    type: integer
+                  guid:
+                    type: string
+                    maxLength: 36
+                  has_died:
+                    type: boolean
+                  balance:
+                    type: number
+                    multipleOf: 0.01
+                    maximum: 10000000000
+                    minimum: -10000000000
+                  picture:
+                    type: string
+                    maxLength: 255
+                  age:
+                    type: integer
+                  eyeColor:
+                    type: string
+                    maxLength: 100
+                  name:
+                    type: string
+                    maxLength: 255
+                  gender:
+                    type: string
+                    maxLength: 100
+                  email:
+                    type: string
+                    maxLength: 255
+                  phone:
+                    type: string
+                    maxLength: 255
+                  address:
+                    type: string
+                    maxLength: 255
+                  about:
+                    type: string
+                    maxLength: 1024
+                  registered:
+                    type: string
+                    format: date-time
+                  tags:
+                    type: array
+                    items:
+                      type: string
+                  friends:
+                    type: array
+                    items:
+                      type: string
+                  greeting:
+                    type: string
+                    maxLength: 256
+                  favouriteFood:
+                    type: string
+                    maxLength: 4
+                  favouriteFruit:
+                    type: array
+                    items:
+                      type: string
+                  favouriteVegetable:
+                    type: array
+                    items:
+                      type: string
+                  company:
+                    type: string
+                    nullable: true
+                required:
+                - index
+                - guid
+                - age
+                - name
+          description: ''
+    delete:
+      operationId: DestroyPeople
+      description: ''
+      parameters:
+      - name: index
+        in: path
+        required: true
+        description: A unique value identifying this people.
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+  /people/{index}{format}:
+    get:
+      operationId: RetrievePeople
+      description: ''
+      parameters:
+      - name: index
+        in: path
+        required: true
+        description: A unique value identifying this people.
+        schema:
+          type: string
+      - name: format
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  _id:
+                    type: string
+                    maxLength: 32
+                  index:
+                    type: integer
+                  guid:
+                    type: string
+                    maxLength: 36
+                  has_died:
+                    type: boolean
+                  balance:
+                    type: number
+                    multipleOf: 0.01
+                    maximum: 10000000000
+                    minimum: -10000000000
+                  picture:
+                    type: string
+                    maxLength: 255
+                  age:
+                    type: integer
+                  eyeColor:
+                    type: string
+                    maxLength: 100
+                  name:
+                    type: string
+                    maxLength: 255
+                  gender:
+                    type: string
+                    maxLength: 100
+                  email:
+                    type: string
+                    maxLength: 255
+                  phone:
+                    type: string
+                    maxLength: 255
+                  address:
+                    type: string
+                    maxLength: 255
+                  about:
+                    type: string
+                    maxLength: 1024
+                  registered:
+                    type: string
+                    format: date-time
+                  tags:
+                    type: array
+                    items:
+                      type: string
+                  friends:
+                    type: array
+                    items:
+                      type: string
+                  greeting:
+                    type: string
+                    maxLength: 256
+                  favouriteFood:
+                    type: string
+                    maxLength: 4
+                  favouriteFruit:
+                    type: array
+                    items:
+                      type: string
+                  favouriteVegetable:
+                    type: array
+                    items:
+                      type: string
+                  company:
+                    type: string
+                    nullable: true
+                required:
+                - index
+                - guid
+                - age
+                - name
+          description: ''
+    put:
+      operationId: UpdatePeople
+      description: ''
+      parameters:
+      - name: index
+        in: path
+        required: true
+        description: A unique value identifying this people.
+        schema:
+          type: string
+      - name: format
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: &id029
+              properties:
+                _id:
+                  type: string
+                  maxLength: 32
+                index:
+                  type: integer
+                guid:
+                  type: string
+                  maxLength: 36
+                has_died:
+                  type: boolean
+                balance:
+                  type: number
+                  multipleOf: 0.01
+                  maximum: 10000000000
+                  minimum: -10000000000
+                picture:
+                  type: string
+                  maxLength: 255
+                age:
+                  type: integer
+                eyeColor:
+                  type: string
+                  maxLength: 100
+                name:
+                  type: string
+                  maxLength: 255
+                gender:
+                  type: string
+                  maxLength: 100
+                email:
+                  type: string
+                  maxLength: 255
+                phone:
+                  type: string
+                  maxLength: 255
+                address:
+                  type: string
+                  maxLength: 255
+                about:
+                  type: string
+                  maxLength: 1024
+                registered:
+                  type: string
+                  format: date-time
+                tags:
+                  type: array
+                  items:
+                    type: string
+                friends:
+                  type: array
+                  items:
+                    type: string
+                greeting:
+                  type: string
+                  maxLength: 256
+                favouriteFood:
+                  type: string
+                  maxLength: 4
+                favouriteFruit:
+                  type: array
+                  items:
+                    type: string
+                favouriteVegetable:
+                  type: array
+                  items:
+                    type: string
+                company:
+                  type: string
+                  nullable: true
+              required:
+              - index
+              - guid
+              - age
+              - name
+          application/x-www-form-urlencoded:
+            schema: *id029
+          multipart/form-data:
+            schema: *id029
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  _id:
+                    type: string
+                    maxLength: 32
+                  index:
+                    type: integer
+                  guid:
+                    type: string
+                    maxLength: 36
+                  has_died:
+                    type: boolean
+                  balance:
+                    type: number
+                    multipleOf: 0.01
+                    maximum: 10000000000
+                    minimum: -10000000000
+                  picture:
+                    type: string
+                    maxLength: 255
+                  age:
+                    type: integer
+                  eyeColor:
+                    type: string
+                    maxLength: 100
+                  name:
+                    type: string
+                    maxLength: 255
+                  gender:
+                    type: string
+                    maxLength: 100
+                  email:
+                    type: string
+                    maxLength: 255
+                  phone:
+                    type: string
+                    maxLength: 255
+                  address:
+                    type: string
+                    maxLength: 255
+                  about:
+                    type: string
+                    maxLength: 1024
+                  registered:
+                    type: string
+                    format: date-time
+                  tags:
+                    type: array
+                    items:
+                      type: string
+                  friends:
+                    type: array
+                    items:
+                      type: string
+                  greeting:
+                    type: string
+                    maxLength: 256
+                  favouriteFood:
+                    type: string
+                    maxLength: 4
+                  favouriteFruit:
+                    type: array
+                    items:
+                      type: string
+                  favouriteVegetable:
+                    type: array
+                    items:
+                      type: string
+                  company:
+                    type: string
+                    nullable: true
+                required:
+                - index
+                - guid
+                - age
+                - name
+          description: ''
+    patch:
+      operationId: PartialUpdatePeople
+      description: ''
+      parameters:
+      - name: index
+        in: path
+        required: true
+        description: A unique value identifying this people.
+        schema:
+          type: string
+      - name: format
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      requestBody:
+        content:
+          application/json:
+            schema: &id030
+              properties:
+                _id:
+                  type: string
+                  maxLength: 32
+                index:
+                  type: integer
+                guid:
+                  type: string
+                  maxLength: 36
+                has_died:
+                  type: boolean
+                balance:
+                  type: number
+                  multipleOf: 0.01
+                  maximum: 10000000000
+                  minimum: -10000000000
+                picture:
+                  type: string
+                  maxLength: 255
+                age:
+                  type: integer
+                eyeColor:
+                  type: string
+                  maxLength: 100
+                name:
+                  type: string
+                  maxLength: 255
+                gender:
+                  type: string
+                  maxLength: 100
+                email:
+                  type: string
+                  maxLength: 255
+                phone:
+                  type: string
+                  maxLength: 255
+                address:
+                  type: string
+                  maxLength: 255
+                about:
+                  type: string
+                  maxLength: 1024
+                registered:
+                  type: string
+                  format: date-time
+                tags:
+                  type: array
+                  items:
+                    type: string
+                friends:
+                  type: array
+                  items:
+                    type: string
+                greeting:
+                  type: string
+                  maxLength: 256
+                favouriteFood:
+                  type: string
+                  maxLength: 4
+                favouriteFruit:
+                  type: array
+                  items:
+                    type: string
+                favouriteVegetable:
+                  type: array
+                  items:
+                    type: string
+                company:
+                  type: string
+                  nullable: true
+          application/x-www-form-urlencoded:
+            schema: *id030
+          multipart/form-data:
+            schema: *id030
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  _id:
+                    type: string
+                    maxLength: 32
+                  index:
+                    type: integer
+                  guid:
+                    type: string
+                    maxLength: 36
+                  has_died:
+                    type: boolean
+                  balance:
+                    type: number
+                    multipleOf: 0.01
+                    maximum: 10000000000
+                    minimum: -10000000000
+                  picture:
+                    type: string
+                    maxLength: 255
+                  age:
+                    type: integer
+                  eyeColor:
+                    type: string
+                    maxLength: 100
+                  name:
+                    type: string
+                    maxLength: 255
+                  gender:
+                    type: string
+                    maxLength: 100
+                  email:
+                    type: string
+                    maxLength: 255
+                  phone:
+                    type: string
+                    maxLength: 255
+                  address:
+                    type: string
+                    maxLength: 255
+                  about:
+                    type: string
+                    maxLength: 1024
+                  registered:
+                    type: string
+                    format: date-time
+                  tags:
+                    type: array
+                    items:
+                      type: string
+                  friends:
+                    type: array
+                    items:
+                      type: string
+                  greeting:
+                    type: string
+                    maxLength: 256
+                  favouriteFood:
+                    type: string
+                    maxLength: 4
+                  favouriteFruit:
+                    type: array
+                    items:
+                      type: string
+                  favouriteVegetable:
+                    type: array
+                    items:
+                      type: string
+                  company:
+                    type: string
+                    nullable: true
+                required:
+                - index
+                - guid
+                - age
+                - name
+          description: ''
+    delete:
+      operationId: DestroyPeople
+      description: ''
+      parameters:
+      - name: index
+        in: path
+        required: true
+        description: A unique value identifying this people.
+        schema:
+          type: string
+      - name: format
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '204':
+          description: ''
+  /employees/{company_id}/:
+    get:
+      operationId: RetrievePeople
+      description: ''
+      parameters:
+      - name: company_id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  _id:
+                    type: string
+                    maxLength: 32
+                  index:
+                    type: integer
+                  guid:
+                    type: string
+                    maxLength: 36
+                  has_died:
+                    type: boolean
+                  balance:
+                    type: number
+                    multipleOf: 0.01
+                    maximum: 10000000000
+                    minimum: -10000000000
+                  picture:
+                    type: string
+                    maxLength: 255
+                  age:
+                    type: integer
+                  eyeColor:
+                    type: string
+                    maxLength: 100
+                  name:
+                    type: string
+                    maxLength: 255
+                  gender:
+                    type: string
+                    maxLength: 100
+                  email:
+                    type: string
+                    maxLength: 255
+                  phone:
+                    type: string
+                    maxLength: 255
+                  address:
+                    type: string
+                    maxLength: 255
+                  about:
+                    type: string
+                    maxLength: 1024
+                  registered:
+                    type: string
+                    format: date-time
+                  tags:
+                    type: array
+                    items:
+                      type: string
+                  friends:
+                    type: array
+                    items:
+                      type: string
+                  greeting:
+                    type: string
+                    maxLength: 256
+                  favouriteFood:
+                    type: string
+                    maxLength: 4
+                  favouriteFruit:
+                    type: array
+                    items:
+                      type: string
+                  favouriteVegetable:
+                    type: array
+                    items:
+                      type: string
+                  company:
+                    type: string
+                    nullable: true
+                required:
+                - index
+                - guid
+                - age
+                - name
+          description: ''
+  /employees/{company_id}{format}:
+    get:
+      operationId: RetrievePeople
+      description: ''
+      parameters:
+      - name: company_id
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      - name: format
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                properties:
+                  _id:
+                    type: string
+                    maxLength: 32
+                  index:
+                    type: integer
+                  guid:
+                    type: string
+                    maxLength: 36
+                  has_died:
+                    type: boolean
+                  balance:
+                    type: number
+                    multipleOf: 0.01
+                    maximum: 10000000000
+                    minimum: -10000000000
+                  picture:
+                    type: string
+                    maxLength: 255
+                  age:
+                    type: integer
+                  eyeColor:
+                    type: string
+                    maxLength: 100
+                  name:
+                    type: string
+                    maxLength: 255
+                  gender:
+                    type: string
+                    maxLength: 100
+                  email:
+                    type: string
+                    maxLength: 255
+                  phone:
+                    type: string
+                    maxLength: 255
+                  address:
+                    type: string
+                    maxLength: 255
+                  about:
+                    type: string
+                    maxLength: 1024
+                  registered:
+                    type: string
+                    format: date-time
+                  tags:
+                    type: array
+                    items:
+                      type: string
+                  friends:
+                    type: array
+                    items:
+                      type: string
+                  greeting:
+                    type: string
+                    maxLength: 256
+                  favouriteFood:
+                    type: string
+                    maxLength: 4
+                  favouriteFruit:
+                    type: array
+                    items:
+                      type: string
+                  favouriteVegetable:
+                    type: array
+                    items:
+                      type: string
+                  company:
+                    type: string
+                    nullable: true
+                required:
+                - index
+                - guid
+                - age
+                - name
+          description: ''
+  /:
+    get:
+      operationId: listapi_roots
+      description: ''
+      parameters: []
+      responses:
+        '200':
+          content:
+            application/json:
+              schema:
+                type: array
+                items: {}
+          description: ''
+  /{format}:
+    get:
+      operationId: Retrieveapi_root
+      description: ''
+      parameters:
+      - name: format
+        in: path
+        required: true
+        description: ''
+        schema:
+          type: string
+      responses:
+        '200':
+          content:
+            application/json:
+              schema: {}
+          description: ''

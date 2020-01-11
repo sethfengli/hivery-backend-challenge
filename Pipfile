@@ -1,0 +1,21 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+pylint = "*"
+
+[packages]
+django = "==3.0.1"
+djangorestframework = "==3.11.0"
+pygments = "==2.5.2"
+ipykernel = "*"
+pandas = "*"
+django-import-export = "*"
+unidecode = "*"
+django-rest-swagger = "*"
+django-extensions = "*"
+
+[requires]
+python_version = "3.6"

@@ -1,0 +1,450 @@
+[
+    {
+        "index": 0,
+        "fruitName": "acai"
+    },
+    {
+        "index": 1,
+        "fruitName": "akee"
+    },
+    {
+        "index": 2,
+        "fruitName": "apple"
+    },
+    {
+        "index": 3,
+        "fruitName": "apricot"
+    },
+    {
+        "index": 4,
+        "fruitName": "avocado"
+    },
+    {
+        "index": 5,
+        "fruitName": "banana"
+    },
+    {
+        "index": 6,
+        "fruitName": "bilberry"
+    },
+    {
+        "index": 7,
+        "fruitName": "black sapote"
+    },
+    {
+        "index": 8,
+        "fruitName": "blackberry"
+    },
+    {
+        "index": 9,
+        "fruitName": "blackcurrant"
+    },
+    {
+        "index": 10,
+        "fruitName": "blood orange"
+    },
+    {
+        "index": 11,
+        "fruitName": "blueberry"
+    },
+    {
+        "index": 12,
+        "fruitName": "boysenberry"
+    },
+    {
+        "index": 13,
+        "fruitName": "buddha's hand"
+    },
+    {
+        "index": 14,
+        "fruitName": "cactus pear"
+    },
+    {
+        "index": 15,
+        "fruitName": "cantaloupe"
+    },
+    {
+        "index": 16,
+        "fruitName": "cherimoya"
+    },
+    {
+        "index": 17,
+        "fruitName": "cherry"
+    },
+    {
+        "index": 18,
+        "fruitName": "chico fruit"
+    },
+    {
+        "index": 19,
+        "fruitName": "chino"
+    },
+    {
+        "index": 20,
+        "fruitName": "clementine"
+    },
+    {
+        "index": 21,
+        "fruitName": "cloudberry"
+    },
+    {
+        "index": 22,
+        "fruitName": "coconut"
+    },
+    {
+        "index": 23,
+        "fruitName": "crab apple"
+    },
+    {
+        "index": 24,
+        "fruitName": "cranberry"
+    },
+    {
+        "index": 25,
+        "fruitName": "currant"
+    },
+    {
+        "index": 26,
+        "fruitName": "custard apple"
+    },
+    {
+        "index": 27,
+        "fruitName": "damson"
+    },
+    {
+        "index": 28,
+        "fruitName": "date"
+    },
+    {
+        "index": 29,
+        "fruitName": "dragonfruit"
+    },
+    {
+        "index": 30,
+        "fruitName": "dried plum"
+    },
+    {
+        "index": 31,
+        "fruitName": "durian"
+    },
+    {
+        "index": 32,
+        "fruitName": "elderberry"
+    },
+    {
+        "index": 33,
+        "fruitName": "feijoa"
+    },
+    {
+        "index": 34,
+        "fruitName": "fig"
+    },
+    {
+        "index": 35,
+        "fruitName": "fingered citron"
+    },
+    {
+        "index": 36,
+        "fruitName": "goji berry"
+    },
+    {
+        "index": 37,
+        "fruitName": "gooseberry"
+    },
+    {
+        "index": 38,
+        "fruitName": "grape"
+    },
+    {
+        "index": 39,
+        "fruitName": "grapefruit"
+    },
+    {
+        "index": 40,
+        "fruitName": "guava"
+    },
+    {
+        "index": 41,
+        "fruitName": "honeyberry"
+    },
+    {
+        "index": 42,
+        "fruitName": "honeydew"
+    },
+    {
+        "index": 43,
+        "fruitName": "horned melon"
+    },
+    {
+        "index": 44,
+        "fruitName": "huckleberry"
+    },
+    {
+        "index": 45,
+        "fruitName": "jabuticaba"
+    },
+    {
+        "index": 46,
+        "fruitName": "jackfruit"
+    },
+    {
+        "index": 47,
+        "fruitName": "jambul"
+    },
+    {
+        "index": 48,
+        "fruitName": "japanese plum"
+    },
+    {
+        "index": 49,
+        "fruitName": "jostaberry"
+    },
+    {
+        "index": 50,
+        "fruitName": "jujube"
+    },
+    {
+        "index": 51,
+        "fruitName": "juniper berry"
+    },
+    {
+        "index": 52,
+        "fruitName": "kiwano"
+    },
+    {
+        "index": 53,
+        "fruitName": "kiwifruit"
+    },
+    {
+        "index": 54,
+        "fruitName": "kumquat"
+    },
+    {
+        "index": 55,
+        "fruitName": "lemon"
+    },
+    {
+        "index": 56,
+        "fruitName": "lime"
+    },
+    {
+        "index": 57,
+        "fruitName": "loganberry"
+    },
+    {
+        "index": 58,
+        "fruitName": "longan"
+    },
+    {
+        "index": 59,
+        "fruitName": "loquat"
+    },
+    {
+        "index": 60,
+        "fruitName": "lychee"
+    },
+    {
+        "index": 61,
+        "fruitName": "mamin"
+    },
+    {
+        "index": 62,
+        "fruitName": "mandarine"
+    },
+    {
+        "index": 63,
+        "fruitName": "mango"
+    },
+    {
+        "index": 64,
+        "fruitName": "mangosteen"
+    },
+    {
+        "index": 65,
+        "fruitName": "marionberry"
+    },
+    {
+        "index": 66,
+        "fruitName": "melon"
+    },
+    {
+        "index": 67,
+        "fruitName": "miracle fruit"
+    },
+    {
+        "index": 68,
+        "fruitName": "mulberry"
+    },
+    {
+        "index": 69,
+        "fruitName": "nance"
+    },
+    {
+        "index": 70,
+        "fruitName": "nectarine"
+    },
+    {
+        "index": 71,
+        "fruitName": "orange"
+    },
+    {
+        "index": 72,
+        "fruitName": "papaya"
+    },
+    {
+        "index": 73,
+        "fruitName": "passionfruit"
+    },
+    {
+        "index": 74,
+        "fruitName": "peach"
+    },
+    {
+        "index": 75,
+        "fruitName": "pear"
+    },
+    {
+        "index": 76,
+        "fruitName": "persimmon"
+    },
+    {
+        "index": 77,
+        "fruitName": "pineapple"
+    },
+    {
+        "index": 78,
+        "fruitName": "pineberry"
+    },
+    {
+        "index": 79,
+        "fruitName": "pitaya"
+    },
+    {
+        "index": 80,
+        "fruitName": "plantain"
+    },
+    {
+        "index": 81,
+        "fruitName": "plum"
+    },
+    {
+        "index": 82,
+        "fruitName": "plumcot "
+    },
+    {
+        "index": 83,
+        "fruitName": "pluot"
+    },
+    {
+        "index": 84,
+        "fruitName": "pomegranate"
+    },
+    {
+        "index": 85,
+        "fruitName": "pomelo"
+    },
+    {
+        "index": 86,
+        "fruitName": "prune"
+    },
+    {
+        "index": 87,
+        "fruitName": "purple mangosteen"
+    },
+    {
+        "index": 88,
+        "fruitName": "quince"
+    },
+    {
+        "index": 89,
+        "fruitName": "raisin"
+    },
+    {
+        "index": 90,
+        "fruitName": "rambutan"
+    },
+    {
+        "index": 91,
+        "fruitName": "raspberry"
+    },
+    {
+        "index": 92,
+        "fruitName": "redcurrant"
+    },
+    {
+        "index": 93,
+        "fruitName": "salak"
+    },
+    {
+        "index": 94,
+        "fruitName": "salal berry"
+    },
+    {
+        "index": 95,
+        "fruitName": "salmonberry"
+    },
+    {
+        "index": 96,
+        "fruitName": "satsuma"
+    },
+    {
+        "index": 97,
+        "fruitName": "soursop"
+    },
+    {
+        "index": 98,
+        "fruitName": "star apple"
+    },
+    {
+        "index": 99,
+        "fruitName": "star fruit"
+    },
+    {
+        "index": 100,
+        "fruitName": "strawberry"
+    },
+    {
+        "index": 101,
+        "fruitName": "surinam cherry"
+    },
+    {
+        "index": 102,
+        "fruitName": "tamarillo"
+    },
+    {
+        "index": 103,
+        "fruitName": "tamarind"
+    },
+    {
+        "index": 104,
+        "fruitName": "tangelo"
+    },
+    {
+        "index": 105,
+        "fruitName": "tangerine"
+    },
+    {
+        "index": 106,
+        "fruitName": "tayberry"
+    },
+    {
+        "index": 107,
+        "fruitName": "ugli fruit"
+    },
+    {
+        "index": 108,
+        "fruitName": "watermelon"
+    },
+    {
+        "index": 109,
+        "fruitName": "white currant"
+    },
+    {
+        "index": 110,
+        "fruitName": "white sapote"
+    },
+    {
+        "index": 111,
+        "fruitName": "yuzu"
+    }
+]
