@@ -92,8 +92,10 @@
 ## Visual Stadio Code 
 
     Visual Stadio Code is not mandatory, as it provides a lot of tools for our development.  
-    The latest version has integraded Jupyter Notebook which is common tool to Data Scientists and developers.  
-    [data_study_ipynb](https://github.com/sethfengli/hivery-backend-challenge/blob/master/data_study_ipynb) is an example how we get study the raw data.  
+    
+    The latest version has integraded Jupyter Notebook which is common tool to Data Scientists and developers. 
+
+    [data_study_ipynb](https://github.com/sethfengli/hivery-backend-challenge/blob/master/data_study.ipynb) is an example how we get study the raw data.  
 
 
 
