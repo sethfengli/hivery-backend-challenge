@@ -43,7 +43,10 @@
 
     python manage.py runscript import_data
    
+## Create admin user
     python manage.py createsuperuser
+
+## Start the server 
    
     python manage.py runserver
 
@@ -65,7 +68,7 @@
 - Given 2 people, provide their information (Name, Age, Address, phone) and the list of their friends in common which have brown eyes and are still alive.
 
     ​URL Pattern:   /commonfriends/{person1_index}/{person2_index}/{eyeColor}/{has_died}/  
-    example:        http://127.0.0.1:8000/commonfriends/3/2/brown/false/
+    example:        http://127.0.0.1:8000/commonfriends/3/2/brown/0/
 
 - Given 1 people, provide a list of fruits and vegetables they like. This endpoint must respect this interface for the output: `{"username": "Ahi", "age": "30", "fruits": 
 
@@ -76,10 +79,7 @@
 
     Provided the data create, update, delete and import functions
 
-#### Create admin user
-    python manage.py createsuperuser
-
-#### Remove the database and import different files from resources folder
+#### Remove the database and import different raw data files from resources folder
 
     cd {Path}/hivery-backend=challenge/
     pipenv shell   
@@ -92,7 +92,7 @@
     python manage.py runscript import_data
     python manage.py runserver
 
-## Visual Stadio Code 
+## Visual Studio Code 
 
     Visual Stadio Code is not mandatory, but it provides a lot of tools for our development.  
 
