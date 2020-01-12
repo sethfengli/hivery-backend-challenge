@@ -14,4 +14,4 @@ class CompanyTestCase(APITestCase):
         
         response = self.client.get('/company/')
         self.assertEqual(response.status_code, 200)
-
+        

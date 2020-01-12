@@ -16,6 +16,7 @@ django-extensions = "*"
 Django = "==3.0.1"
 Pygments = "==2.5.2"
 Unidecode = "*"
+pylint = "*"
 
 [requires]
 python_version = "3.6"

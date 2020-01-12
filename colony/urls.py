@@ -17,7 +17,7 @@ urlpatterns = [
     path('people/', views.PeopleList.as_view(), name='people-list'),
     path('people/<int:pk>/', views.PeopleDetail.as_view(), name='people-detail'),
     path('employees/<int:company_id>/', views.EmployeeList.as_view(),  name='employee-list'),
-    path('commonfriends/<int:person1_index>/<int:person2_index>/<str:eyeColor>/<int:has_died>/', views.CommonFriends.as_view()),
+    path('commonfriends/<int:person1_index>/<int:person2_index>/<str:eyeColor>/<slug:has_died>/', views.CommonFriends.as_view()),
     path('favouritefood/<int:person_index>/', views.FavouriteFood.as_view()),
     path('', views.api_root),
     path('openapi-schema/', get_schema_view(

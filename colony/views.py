@@ -79,6 +79,21 @@ class EmployeeList(generics.ListAPIView):
         employees = People.objects.filter(company_id=co_id)
         return get_list_or_404(employees)
 
+def to_bool(value):
+    """
+    Converts 'something' to boolean. Raises exception if it gets a string it doesn't handle.
+    Case is ignored for strings. These string values are handled:
+      True: 'True', "1", "TRue", "yes", "y", "t"
+      False: "", "0", "faLse", "no", "n", "f"
+    Non-string values are passed to bool.
+    """
+    if type(value) == type(''):
+        if value.lower() in ("yes", "y", "true",  "t", "1"):
+            return True
+        if value.lower() in ("no",  "n", "false", "f", "0", ""):
+            return False
+        raise Exception('Invalid value for boolean conversion: ' + value)
+    return bool(value)
 
 class CommonFriends(APIView):
     """
@@ -102,7 +117,7 @@ class CommonFriends(APIView):
       
         commonFriendIndexList = list( set(people1_friends).intersection(set(people2_friends)) )
         commonFriends = People.objects.filter(index__in = (commonFriendIndexList))
-        commonFriends = commonFriends.filter(eyeColor = filter['eyeColor']).filter(has_died = bool(filter['has_died']))
+        commonFriends = commonFriends.filter(eyeColor = filter['eyeColor']).filter(has_died = to_bool(filter['has_died']))
   
         if  commonFriends.exists():
             response_status = status.HTTP_200_OK

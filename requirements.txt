@@ -1,0 +1,10 @@
+django
+djangorestframework
+pygments
+django-import-export
+django-rest-swagger
+django-extensions
+pylint
+ipykernel
+pandas
+unidecode

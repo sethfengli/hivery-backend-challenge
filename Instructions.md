@@ -12,7 +12,8 @@
 
     Python --version
 
-### Pipenv or other virtual environment tool must be installed,
+### Install or update pipenv, other virtual environment tool management tool are Ok, this document use pipenv as example, the other toools' usage should be similar.
+
     pip install pipenv
 
 ## Make sure your install git or the other same tools, clone the repository from
@@ -22,18 +23,20 @@
 
 ## Setup virtual environment, depended package and 
     
-### Change the current folder to your download  repository folder   
+### Change the current folder to your download  repository folder  
+
     cd {Path}/hivery-backend=challenge/
 
-### If your current python version is lower than 3.7 and you can't change it, you can install python 3.7 in the virtual environment.
-    
-    pipenv shell
-    pipenv --python 3.7
+### create new virtual environment. If your current python version is lower than 3.7 and you can't change it, you can recreate  virtual environment in python 3.7
+
+    pipenv --python 3.7      
 
 ### You can copy the following instructions to a bacth file or paster directly to CLI or CMD 
 
     pipenv shell
     pipenv install -r requirements.txt
+
+#### Ignore the warning which saying conlicts with existing module, it won't overwrite any files.
 
     django-admin.py startproject paranuara .
     python manage.py startapp colony
@@ -62,7 +65,7 @@
 
 - Given a company, the API needs to return all their employees. Provide the appropriate solution if the company does not have any employees.
 
-    ​URL Pattern:   /employees/{company_id}/  
+    URL Pattern:   /employees/{company_id}/  
     example:        http://127.0.0.1:8000/employees/3/
 
 - Given 2 people, provide their information (Name, Age, Address, phone) and the list of their friends in common which have brown eyes and are still alive.
@@ -82,11 +85,11 @@
 #### Remove the database and import different raw data files from resources folder
 
     cd {Path}/hivery-backend=challenge/
-    pipenv shell   
     del db.sqlite3
     cd colony
     del migrations /S /Q
     cd ..
+    pipenv shell   
     python manage.py makemigrations colony
     python manage.py migrate
     python manage.py runscript import_data
@@ -99,6 +102,8 @@
     The latest version has integraded Jupyter Notebook which is common tool to Data Scientists and developers. 
 
 #### [data_study_ipynb](https://github.com/sethfengli/hivery-backend-challenge/blob/master/data_study.ipynb) is an example how it could help us study the raw data here.  
+
+https://code.visualstudio.com/docs/python/python-tutorial
 
 
 
