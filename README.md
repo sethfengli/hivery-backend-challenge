@@ -1,3 +1,6 @@
+## This is the orignal requirement, please see the [Instructions.md](https://github.com/sethfengli/hivery-backend-challenge/blob/master/Instructions.md)
+
+
 # Paranuara Challenge
 Paranuara is a class-m planet. Those types of planets can support human life, for that reason the president of the Checktoporov decides to send some people to colonise this new planet and
 reduce the number of people in their own country. After 10 years, the new president wants to know how the new colony is growing, and wants some information about his citizens. Hence he hired you to build a rest API to provide the desired information.
@@ -23,34 +26,3 @@ To deliver your system, you need to send the link on GitHub. Your solution must 
 - Tests
 
 Feel free to reach to your point of contact for clarification if you have any questions.
-
-## Pros:
-- Using exception handling
-- Good models
-- Documented code
-- Usage of serialisers
-- Locking transactions per request
-
-
-## Cons:
-
-- Garbage in repo (___pychache__, venv)
-- Garbage in the repository (sqllite3 db, __pycache__)
-- Incorrect use of Django commands during setup
-- Commented code everywhere
-- Imports inside function
-- Mixed data in the same response variables (e.g. index)
-- No request parameters validation or sanitisation
-- Single endpoint for multiple purposes, overall very hard to understand the logic of majority of the functions, too many if statements and code branches
-- All logic inside views, no structure
-- Big try/except blocks
-- Building json response manually (no serializers)
-- Not using proper response codes
-- Overcomplicated logic
-- A lot of O(n^2) complexity code paths in the solution
-- No DB backend, reading files, no data cleanup and modification
-- No proper logic abstraction
-- No proper response creation, returning raw text
-- No structure (single file solution)
-- No unit tests
-- No data cleanup, validation and persistence

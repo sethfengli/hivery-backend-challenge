@@ -7,15 +7,15 @@ verify_ssl = true
 pylint = "*"
 
 [packages]
-django = "==3.0.1"
 djangorestframework = "==3.11.0"
-pygments = "==2.5.2"
 ipykernel = "*"
 pandas = "*"
 django-import-export = "*"
-unidecode = "*"
 django-rest-swagger = "*"
 django-extensions = "*"
+Django = "==3.0.1"
+Pygments = "==2.5.2"
+Unidecode = "*"
 
 [requires]
 python_version = "3.6"
