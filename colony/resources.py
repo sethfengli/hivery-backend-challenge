@@ -96,7 +96,6 @@ class PeopleResource(resources.ModelResource):
                 '%s__in' % self.field: ids
             })
 
-
     company=Field(attribute='company' , widget=ForeignKeyWidget(Company, field='index'), column_name='company_id')
     tags = Field(attribute='tags', widget=ListToManytoMany(Tag, field='name'), column_name='tags')
     favouriteFruit = Field(attribute='favouriteFruit', widget=ListToManytoMany(Fruit, field='name'), column_name='favouriteFood')
@@ -123,6 +122,7 @@ class PeopleResource(resources.ModelResource):
                 'about', 
                 'registered',
                 'greeting',
+                'favouriteFood',
                 'favouriteFruit',
                 'favouriteVegetable', 
                 'company', )

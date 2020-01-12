@@ -42,6 +42,9 @@
     python manage.py migrate
 
     python manage.py runscript import_data
+   
+    python manage.py createsuperuser
+   
     python manage.py runserver
 
 ##  Test APIs
@@ -62,7 +65,7 @@
 - Given 2 people, provide their information (Name, Age, Address, phone) and the list of their friends in common which have brown eyes and are still alive.
 
     ​URL Pattern:   /commonfriends/{person1_index}/{person2_index}/{eyeColor}/{has_died}/  
-    example:        http://127.0.0.1:8000/commonfriends/3/2/brown/0/
+    example:        http://127.0.0.1:8000/commonfriends/3/2/brown/false/
 
 - Given 1 people, provide a list of fruits and vegetables they like. This endpoint must respect this interface for the output: `{"username": "Ahi", "age": "30", "fruits": 
 
@@ -91,11 +94,11 @@
 
 ## Visual Stadio Code 
 
-    Visual Stadio Code is not mandatory, as it provides a lot of tools for our development.  
+    Visual Stadio Code is not mandatory, but it provides a lot of tools for our development.  
 
     The latest version has integraded Jupyter Notebook which is common tool to Data Scientists and developers. 
 
-### [data_study_ipynb](https://github.com/sethfengli/hivery-backend-challenge/blob/master/data_study.ipynb) is an example how it could help us study the raw data here.  
+#### [data_study_ipynb](https://github.com/sethfengli/hivery-backend-challenge/blob/master/data_study.ipynb) is an example how it could help us study the raw data here.  
 
 
 

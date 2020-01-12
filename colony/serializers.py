@@ -1,4 +1,5 @@
 from rest_framework import serializers
+from rest_framework.request import Request
 from .models import Company, Fruit, Vegetable, Tag, People
 
 class CompanySerializer(serializers.ModelSerializer):
@@ -82,7 +83,7 @@ class HyperlinkedPeopleSerializer (serializers.HyperlinkedModelSerializer):
     
     def __init__(self, *args, **kwargs):
         super(serializers.HyperlinkedModelSerializer, self).__init__(*args, **kwargs)
-
+    
     class Meta:
         model = People
         fields = ('index', 'url', 'name', 'age', 'address', 'phone', 

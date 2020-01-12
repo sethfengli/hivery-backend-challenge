@@ -106,7 +106,7 @@ class CommonFriends(APIView):
   
         if  commonFriends.exists():
             response_status = status.HTTP_200_OK
-            commonFriendSerializer =  HyperlinkedPeopleSerializer( commonFriends , many=True )
+            commonFriendSerializer =  BriefPeopleSerializer( commonFriends , many=True )
             common_friends_data = commonFriendSerializer.data
 
         else:
