@@ -25,7 +25,7 @@
 ### Change the current folder to your download  repository folder   
     cd {Path}/hivery-backend=challenge/
 
-### If your current python version is lower than 3.7 and , please run the command as bbelow to install 3.7
+### If your current python version is lower than 3.7 and you can't change it, you can install python 3.7 in the virtual environment.
     
     pipenv shell
     pipenv --python 3.7
@@ -56,17 +56,17 @@
 
 - Given a company, the API needs to return all their employees. Provide the appropriate solution if the company does not have any employees.
 
-    ​URL Pattern:   /employees/{company_id}/
+    ​URL Pattern:   /employees/{company_id}/  
     example:        http://127.0.0.1:8000/employees/3/
 
 - Given 2 people, provide their information (Name, Age, Address, phone) and the list of their friends in common which have brown eyes and are still alive.
 
-    ​URL Pattern:   /commonfriends/{person1_index}/{person2_index}/{eyeColor}/{has_died}/
+    ​URL Pattern:   /commonfriends/{person1_index}/{person2_index}/{eyeColor}/{has_died}/  
     example:        http://127.0.0.1:8000/commonfriends/3/2/brown/0/
 
 - Given 1 people, provide a list of fruits and vegetables they like. This endpoint must respect this interface for the output: `{"username": "Ahi", "age": "30", "fruits": 
 
-    ​URL Pattern:   /favouritefood​/{person_index}​/
+    ​URL Pattern:   /favouritefood​/{person_index}​/  
     example:        http://127.0.0.1:8000/favouritefood​/1/
 
 ### Django Admin http://127.0.0.1:8000/Admin
@@ -91,9 +91,9 @@
 
 ## Visual Stadio Code 
 
-    Visual Stadio Code is not mandatory, as it provides a lot of tools for our development.
-    The latest version has integraded Jupyter Notebook which is common tool to Data Scientists and developers.
-    [data_study_ipynb](https://github.com/sethfengli/hivery-backend-challenge/blob/master/data_study_ipynb) is an example how we get study the raw data.
+    Visual Stadio Code is not mandatory, as it provides a lot of tools for our development.  
+    The latest version has integraded Jupyter Notebook which is common tool to Data Scientists and developers.  
+    [data_study_ipynb](https://github.com/sethfengli/hivery-backend-challenge/blob/master/data_study_ipynb) is an example how we get study the raw data.  
 
 
 

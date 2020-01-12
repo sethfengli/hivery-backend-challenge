@@ -1,4 +1,4 @@
-## This is the orignal requirement, please see the [Instructions.md](https://github.com/sethfengli/hivery-backend-challenge/blob/master/Instructions.md)
+## This is the orignal requirement document, please see the [Instructions.md](https://github.com/sethfengli/hivery-backend-challenge/blob/master/Instructions.md)
 
 
 # Paranuara Challenge
