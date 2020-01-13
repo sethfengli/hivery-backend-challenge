@@ -150,22 +150,4 @@ class FriendResource(PeopleResource):
     class Meta:
         model = Friend
         fields =('_id',
-            'index', 
-            'guid',
-            'has_died',
-            'balance',
-            'picture', 
-            'age',
-            'eyeColor',
-            'name',
-            'gender',
-            'email', 
-            'phone', 
-            'address',
-            'about', 
-            'registered',
-            'greeting',
-            'favouriteFruit',
-            'favouriteVegetable', 
-            'company'
             'friends', )
