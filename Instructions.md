@@ -97,14 +97,13 @@
 
 ## Visual Studio Code 
 
-    Visual Stadio Code is not mandatory, but it provides a lot of tools for our development.  
+    Visual Studio Code is not mandatory, but it provides a lot of tools for our development.  
 
-    The latest version has integraded Jupyter Notebook which is common tool to Data Scientists and developers. 
+    The latest version has integraded Jupyter Notebook which is common tool for data scientists and developers. 
 
 #### [data_study_ipynb](https://github.com/sethfengli/hivery-backend-challenge/blob/master/data_study.ipynb) is an example how it could help us study the raw data here.  
 
 https://code.visualstudio.com/docs/python/python-tutorial
-
 
 
 
