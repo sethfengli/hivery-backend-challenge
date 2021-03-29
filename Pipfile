@@ -14,7 +14,7 @@ django-import-export = "*"
 django-rest-swagger = "*"
 django-extensions = "*"
 Django = "==3.0.1"
-Pygments = "==2.5.2"
+Pygments = "==2.7.4"
 Unidecode = "*"
 pylint = "*"
 
